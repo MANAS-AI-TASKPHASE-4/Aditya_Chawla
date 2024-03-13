@@ -22,8 +22,8 @@ int main(int argc, char **argv) {
 
     ROS_INFO("Chatbot node started.");
 
-    // Instead of ros::spin(), use a loop with ros::spinOnce() to handle callbacks
-    ros::Rate loop_rate(10);  // Adjust loop rate if needed
+    
+    ros::Rate loop_rate(10);  
     while (ros::ok()) {
         ros::spinOnce();
         loop_rate.sleep();
